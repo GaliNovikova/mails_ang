@@ -1,0 +1,18 @@
+ <table class="table">
+  <thead class="thead-inverse">
+    <tr>
+      <th>Date</th>
+      <th>From</th>
+      <th>Subject</th>
+      <th>Content</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="mail in mailsList" ng-if="mail.boxId==currentBoxId">
+      <th scope="row">{{mail.date}}</th>
+      <td>{{mail.author}}</td>
+      <td>{{mail.subject}}</td>
+      <td><div class="short-content">{{mail.text}}</div></td>
+    </tr>
+  </tbody>
+</table>    
