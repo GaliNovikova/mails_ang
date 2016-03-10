@@ -55,7 +55,7 @@ body {
 
 /* Padding for spacing */
 .inner {
-  padding: 30px;
+  padding: 5px;
 }
 
 
@@ -116,8 +116,12 @@ body {
   padding: 10px 20px;
   font-weight: bold;
 }
-
-
+#page-content-wrapper {
+  text-align: left;
+}
+.short-content{
+  text-overflow: ellipsis;
+}
 /*
  * Footer
  */
@@ -144,7 +148,7 @@ body {
   }
   /* Start the vertical centering */
   .site-wrapper-inner {
-    vertical-align: middle;
+    /*vertical-align: middle;*/
   }
   /* Handle the widths */
   .masthead,
@@ -155,9 +159,11 @@ body {
 }
 
 @media (min-width: 992px) {
-  .masthead,
-  .mastfoot,
-  .cover-container {
+  .masthead{
     width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
   }
+
 }
